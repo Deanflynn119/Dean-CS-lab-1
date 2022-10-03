@@ -1,1 +1,1 @@
-# Dean-CS-lab-1
+# Dean-CS-labs
