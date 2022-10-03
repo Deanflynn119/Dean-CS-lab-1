@@ -1,1 +1,20 @@
-
+name = input("What is your name? ")
+print('Hello' ,name, 'nice to meet you!')
+##########################################
+celcius = input("Enter a temperature in celcius:")
+farenheit = float(celcius) * 1.8 + 32
+print(celcius, "C is the same as ",farenheit, "in farenheit")
+##########################################
+students = int(input("How many students are there?"))
+classsize = int(input("How many students per class?"))
+group = print(int(students % classsize))
+##########################################
+students = int(input("How many students are there?"))
+classsize = int(input("How many students per class?"))
+groups = int(students/classsize)
+remainder = int(students % classsize)
+print("There will be",groups,"groups and",remainder, "left over")
+##########################################
+sweets =  int(input("How many sweets do you have?"))
+students = int(input("How many students are attending?"))
+print("Each pupil will get",int(sweets / students),"sweets =, and there will be", sweets % students,"sweets left over")
