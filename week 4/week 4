@@ -73,26 +73,19 @@ else:
     print("Error")
 ##############################################################################################
 from statistics import mean
+temp = []
+while len(temp) != 6:
+    temp.append(int(input("Enter the tempreture in Celsius Degrees")))
 
-temps = []
-
-
-def averages(aTemps):
-    maximun = max(aTemps)
-    minimum = min(aTemps)
-    mean.average = mean(aTemps)
-    print(f"""The maximum temps is {maximum}
-    the minimum temp is {minimum}
-    the mean of the temps is {mean_avg}""")
-
-
-temp = int(input("Write your temp here: "))
-while True:
-    temp = int(input("Write your temp here: "))
-    if temp == "":
-        break
-    else:
-        temps.append(int(temp))
-averages(temps)
+mintemp = min(temp)
+maxtemp = max(temp)
+meantemp = mean(temp)
+choice = input("Would you like the min, max or mean?")
+if choice.title() == "Min":
+    print(mintemp)
+if choice.title() == "Max":
+    print(maxtemp)
+if choice.title() == "Mean":
+    print(meantemp)
 #############################################################################################
 
