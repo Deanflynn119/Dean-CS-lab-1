@@ -22,4 +22,77 @@ def string_test(s):
 
 string_test('Van Dijk is the best defender of all time')
 ###################################################################################
+name = input("What is your name? ")
+if name == "":
+    print("Hello, Stranger!")
+else:
+    print("Hello " + name.title() + " Pleased to meet you")
+#############################################################################
+def remove_last(string):
+    if len(string) < 2:
+        print(string)
+    else:
+        string2 = string[:-1]
+        print(string2)
+
+text = input("input some text:")
+remove_last(text)
+#################################################################################
+def cel_to_fah(c):
+    f = (c * (9 / 5) + 32)
+    return f
+def fah_to_cel(f):
+    c = (f - 32) * (5/9)
+    return c
+
+option = input("""do you want to convert to celcius of farenheit?""")
+temp = float(input("Enter your temperature here: "))
+
+if option == 'farenheit':
+    print(cel_to_fah(temp),"f")
+elif option == 'celcius':
+    print(fah_to_cel(temp),"c")
+else:
+    print("Error")
+##########################################################################################
+def cel_to_fah(c):
+    f = (c * (9 / 5) + 32)
+    return f
+def fah_to_cel(f):
+    c = (f - 32) * (5/9)
+    return c
+
+option = input("""do you want to convert to celcius of farenheit?""")
+temp = float(input("Enter your temperature here: "))
+
+if option == 'farenheit':
+    print(cel_to_fah(temp),"f")
+elif option == 'celcius':
+    print(fah_to_cel(temp),"c")
+else:
+    print("Error")
+##############################################################################################
+from statistics import mean
+
+temps = []
+
+
+def averages(aTemps):
+    maximun = max(aTemps)
+    minimum = min(aTemps)
+    mean.average = mean(aTemps)
+    print(f"""The maximum temps is {maximum}
+    the minimum temp is {minimum}
+    the mean of the temps is {mean_avg}""")
+
+
+temp = int(input("Write your temp here: "))
+while True:
+    temp = int(input("Write your temp here: "))
+    if temp == "":
+        break
+    else:
+        temps.append(int(temp))
+averages(temps)
+#############################################################################################
 
