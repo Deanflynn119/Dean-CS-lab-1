@@ -1,1 +1,25 @@
+def range_onehundred(a):
+    if number >= 0 and number < 101:
+        print("The number is within the range")
+    else:
+        print("The number is not within the range")
+
+number = int(input("Please enter a number"))
+range_onehundred(number)
+###################################################################################
+def string_test(s):
+    d={"upper_case":0, "lower_case":0}
+    for c in s:
+        if c.isupper():
+           d["upper_case"]+=1
+        elif c.islower():
+           d["lower_case"]+=1
+        else:
+           pass
+    print ("original string : ", s)
+    print ("The number of upper case characters is : ", d["upper_case"])
+    print ("The number of lower case letters is : ", d["lower_case"])
+
+string_test('Van Dijk is the best defender of all time')
+###################################################################################
 
