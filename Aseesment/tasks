@@ -1,0 +1,32 @@
+string = input("What is your name?")
+allnames = string.split()
+firstword = allnames[0]
+secondword = allnames[1]
+if firstword == "Lord":
+    print("It shall be so,", string)
+if firstword == "Lady":
+    print("It shall be so,", string)
+else:
+    print("You may not be known by that name!")
+########################################################
+no_of_spam = 0
+while True:
+    amount_of_spam = int(input("How many slices of spam would you like?"))
+    spam = "spam,"
+    no_of_spam += amount_of_spam
+    if no_of_spam == 0:
+       print(("You must have some spam!"))
+    elif no_of_spam == 1:
+        print("Eggs with spam coming up!")
+    else:
+        print("Egg with",no_of_spam*spam,"coming up!")
+        break
+#############################################################
+correct = "parrot"
+while True:
+    password = input("Please enter the password")
+    if password == correct:
+        print("The password is correct")
+        break
+    else:
+        print("the password is not correct. You must try again!")
