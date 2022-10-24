@@ -1,13 +1,8 @@
-string = input("What is your name?")
-allnames = string.split()
-firstword = allnames[0]
-secondword = allnames[1]
-if firstword == "Lord":
-    print("It shall be so,", string)
-if firstword == "Lady":
-    print("It shall be so,", string)
+name = input("Greetings! How should we call you?")
+if name.startswith("Lord") or name.startswith("Lady"):
+    print("It shall be so", name)
 else:
-    print("You may not be known by that name!")
+    print("You may not be known by that name")
 ########################################################
 no_of_spam = 0
 while True:
@@ -30,3 +25,26 @@ while True:
         break
     else:
         print("the password is not correct. You must try again!")
+###############################################################
+def password_checker(password):
+    from string import ascii_letters as letters, digits, punctuation
+
+    has_letter = has_digit = has_punc = False
+
+    for character in password:
+        if character in letters:
+            has_letter = True
+        elif character in digits:
+            has_digit = True
+        elif character in punctuation:
+            has_punc = True
+        return has_letter and has_digit and has_punc
+
+password = input("Please enter a password")
+if password_checker(password) == True:
+    print("This is a valid password")
+
+else:
+    print("This is not a valid password")
+    password = input("Please enter a password")
+    password_checker(password)        
