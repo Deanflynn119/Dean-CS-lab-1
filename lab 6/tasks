@@ -28,3 +28,18 @@ text = "C h a m p s o f e u r o p e s i x t i m e s"
 text2 = text.replace(" ","")
 print(text2[::-1])
 #######################################################################################################
+import random
+import string
+string.ascii_letters
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+
+message = input("Enter a message. ")
+
+num = random.randint(2,10)
+space=" "
+numspace = num*space
+for element in message:
+    randletter = random.choice(string.ascii_letters)
+    print(element, end= randletter * num)
+print("\n")
