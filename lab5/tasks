@@ -1,0 +1,16 @@
+import platform
+
+os = platform.platform()
+print(os)
+#################################################
+import sys
+values = sys.argv[1:]
+
+print(len(values))
+#################################################
+import sys
+
+message = sys.argv
+message_size = sorted(message,key=len)
+print(message_size[0])
+################################################
