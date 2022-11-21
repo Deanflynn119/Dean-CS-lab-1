@@ -1,6 +1,6 @@
-word1 = ['crab','oyster','donkey','cricket','mule','grouse','sugarglider','anteater','pigeon','seagul','wombat','capybara']
-word2 = ['iran','qatar','brazil','argentina','uraguay','netherlands','germany']
-word3 = ['trombone','trumpet','xylophone','piano','drums','triangle','dube','vuvuzela']
+word1 = ['crab','oyster','donkey','cricket','mule','grouse','sugarglider','anteater','pigeon','seagul','wombat','capybara','lobster','slug,'cockroach','ape','chimp']
+word2 = ['iran','qatar','brazil','argentina','uraguay','netherlands','germany','italy','wales,'ireland','scotland','usa','canada','panama','tunisia','albania','luxemberg']
+word3 = ['trombone','trumpet','xylophone','piano','drums','triangle','dube','vuvuzela','bass',']
 
 while True:
     try:
