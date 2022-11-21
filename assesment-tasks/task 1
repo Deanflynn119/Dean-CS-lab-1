@@ -1,0 +1,23 @@
+word1 = ('crab','oyster','donkey','cricket','mule','grouse','sugarglider','anteater','pigeon','seagul','wombat','capybara')
+word2 = ('iran','qatar','brazil','argentina','uraguay','netherlands','germany')
+word3 = ('trombone','trumpet','xylophone','piano','drums','triangle','dube','vuvuzela')
+
+while True:
+    try:
+        numofpass = int(input("How many passwords would you like?"))
+        if 1 <= numofpass <= 24:
+            break
+        else:
+            print("Enter a number between 1 and 24 please")
+    except ValueError:
+        print("Please enter a valid number")
+
+
+for number in range(numofpass):
+    import random
+    a = word1
+    b = word2
+    c = word3
+
+    password = (random.choice(a),random.choice(b),random.choice(c))
+    print("".join(password))
