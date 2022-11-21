@@ -1,6 +1,6 @@
-word1 = ('crab','oyster','donkey','cricket','mule','grouse','sugarglider','anteater','pigeon','seagul','wombat','capybara')
-word2 = ('iran','qatar','brazil','argentina','uraguay','netherlands','germany')
-word3 = ('trombone','trumpet','xylophone','piano','drums','triangle','dube','vuvuzela')
+word1 = ['crab','oyster','donkey','cricket','mule','grouse','sugarglider','anteater','pigeon','seagul','wombat','capybara']
+word2 = ['iran','qatar','brazil','argentina','uraguay','netherlands','germany']
+word3 = ['trombone','trumpet','xylophone','piano','drums','triangle','dube','vuvuzela']
 
 while True:
     try:
