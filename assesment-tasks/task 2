@@ -1,0 +1,35 @@
+print("Enter the runners numbers and their times separated by two colons e.g (123::123)")
+print("Input 'END' when you are finished")
+while True:
+    user_input = input()
+    temporaryinput = user_input.split("::")
+    if user_input =="END":
+        break
+    else:
+        Athletes.append(temporaryinput[0])
+        AthletesTime.append(int(temporaryinput[1]))
+
+
+avg = statistics.mean(AthletesTime)
+avgminute = int(avg/60)
+avg -= (avgminute*60)
+avgsecond = int(avg)
+
+max = max(AthletesTime)
+print(AthletesTime)
+print(Athletes)
+maxminute = int(max/60)
+max -= (maxminute*60)
+maxsecond = max
+
+min = min(AthletesTime)
+minminute = int(min/60)
+min -= (minminute*60)
+minsecond = min
+
+
+print("The total number of runners is",len(Athletes),)
+print("The averge time recorded is", avgminute,"minutes",avgsecond,"seconds")
+print("The longest time taken is",maxminute,"minutes",maxsecond,"seconds")
+print("The shortest time taken is",minminute,"minutes",minsecond,"seconds")
+print("The number of the runner with the shortest time is")
