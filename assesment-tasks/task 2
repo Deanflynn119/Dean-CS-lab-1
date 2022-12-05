@@ -1,8 +1,13 @@
+import statistics
+Athletes = []
+AthletesTime = []
+
 print("Enter the runners numbers and their times separated by two colons e.g (123::123)")
 print("Input 'END' when you are finished")
 while True:
     user_input = input()
     temporaryinput = user_input.split("::")
+    print(temporaryinput)
     if user_input =="END":
         break
     else:
@@ -16,8 +21,6 @@ avg -= (avgminute*60)
 avgsecond = int(avg)
 
 max = max(AthletesTime)
-print(AthletesTime)
-print(Athletes)
 maxminute = int(max/60)
 max -= (maxminute*60)
 maxsecond = max
@@ -27,9 +30,14 @@ minminute = int(min/60)
 min -= (minminute*60)
 minsecond = min
 
+newlist = list(map(list, zip(Athletes, AthletesTime)))
+organisedlist = sorted(newlist, key=lambda x: x[1], reverse=False)
+best = organisedlist[0][0]
+
+
 
 print("The total number of runners is",len(Athletes),)
 print("The averge time recorded is", avgminute,"minutes",avgsecond,"seconds")
 print("The longest time taken is",maxminute,"minutes",maxsecond,"seconds")
 print("The shortest time taken is",minminute,"minutes",minsecond,"seconds")
-print("The number of the runner with the shortest time is")
+print("The number of the runner with the fastest time is #" ,best)
