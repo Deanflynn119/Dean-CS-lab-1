@@ -7,7 +7,6 @@ print("Input 'END' when you are finished")
 while True:
     user_input = input()
     temporaryinput = user_input.split("::")
-    print(temporaryinput)
     if user_input =="END":
         break
     else:
@@ -40,4 +39,4 @@ print("The total number of runners is",len(Athletes),)
 print("The averge time recorded is", avgminute,"minutes",avgsecond,"seconds")
 print("The longest time taken is",maxminute,"minutes",maxsecond,"seconds")
 print("The shortest time taken is",minminute,"minutes",minsecond,"seconds")
-print("The number of the runner with the fastest time is #" ,best)
+print("The number of the runner with the fastest time is #",best)
