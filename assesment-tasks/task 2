@@ -1,17 +1,23 @@
 import statistics
 Athletes = []
 AthletesTime = []
-
+AthleteNumber = 0
 print("Enter the runners numbers and their times separated by two colons e.g (123::123)")
 print("Input 'END' when you are finished")
 while True:
     user_input = input()
     temporaryinput = user_input.split("::")
+    if user_input == "END" and AthleteNumber == 0:
+        print("Please enter some data")
+        exit()
     if user_input =="END":
         break
+    elif temporaryinput[0]=="" or temporaryinput[1]=="":
+        print("Error in data stream. Ignorning. Carry on.")
     else:
         Athletes.append(temporaryinput[0])
         AthletesTime.append(int(temporaryinput[1]))
+        AthleteNumber +=1
 
 
 avg = statistics.mean(AthletesTime)
